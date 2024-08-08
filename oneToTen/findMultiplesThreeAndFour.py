@@ -1,8 +1,8 @@
-def findMultiplesOfThree(start:int,end:int):
+def findMultiplesOfThreeAndFour(start:int,end:int):
     result = []
 
     for number in range(start, end):
-        if number % 3 == 0 :
+        if number % 3 == 0 and number % 4 == 0 :
             result.append(number)
         else:
             pass
@@ -20,6 +20,6 @@ def main():
             print("Please enter again --- ")
             pass
 
-    findMultiplesOfThree(numStart,numEnd)
+    findMultiplesOfThreeAndFour(numStart,numEnd)
 
 main()
