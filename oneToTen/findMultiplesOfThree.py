@@ -7,7 +7,7 @@ def findMultiplesOfThree(start:int,end:int):
         else:
             pass
 
-    print("You are input number :", start , "and", end)
+    print("/nYou are input number :", start , "and", end)
     print(result)
 
 def main():
