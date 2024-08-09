@@ -1,9 +1,14 @@
 def calculateSumAndAverage(number):
     
-    temp
+    result = 0
     for num in number:
+        calculate = num + result
+        result += calculate
 
-    print(number)
+    average = result / len(number) 
+
+    print("Total is :", result)
+    print("Average is :", average)
     
 def main():
 
@@ -15,7 +20,10 @@ def main():
 
         numSets.append(number)
         count += 1
-
-        calculateSumAndAverage(numSets)
-
+    
+        if count == 6:
+            break
+    
+    calculateSumAndAverage(numSets)
+    
 main()
