@@ -2,8 +2,7 @@ def calculateSumAndAverage(number):
     
     result = 0
     for num in number:
-        calculate = num + result
-        result += calculate
+        result += num
 
     average = result / len(number) 
 
