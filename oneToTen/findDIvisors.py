@@ -1,7 +1,12 @@
-def find_divisors(n:int):
-    lit = []
-    for i in range (1, n):
-        if i %
+def find_divisors(number):
+    list = []
+    for runNum in range(1, number + 1):
+        if number % runNum == 0:
+            list.append(runNum)
+    print(list)
 
 def main():
-    in_put = int(input("Input:"))
+    number = int(input("Enter a number : "))
+    find_divisors(number)
+
+main()
