@@ -23,4 +23,5 @@ def main():
             print("Input number incorrect...Please try again.") 
             pass
     checkPrime(number)
+    
 main()
