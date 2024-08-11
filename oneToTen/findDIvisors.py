@@ -6,7 +6,13 @@ def find_divisors(number):
     print(list)
 
 def main():
-    number = int(input("Enter a number : "))
+    while True:
+        number = int(input("\nEnter a number : "))
+        if number > 0 and number <= 1000:
+            break
+        else:
+            print("Input number incorrect...Please try again.") 
+            pass
     find_divisors(number)
 
 main()
