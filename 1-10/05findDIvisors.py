@@ -1,4 +1,4 @@
-def find_divisors(number):
+def findDivisors(number):
     list = []
     for runNum in range(1, number + 1):
         if number % runNum == 0:
@@ -13,6 +13,6 @@ def main():
         else:
             print("Input number incorrect...Please try again.") 
             pass
-    find_divisors(number)
+    findDivisors(number)
 
 main()
