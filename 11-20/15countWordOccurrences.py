@@ -6,7 +6,6 @@ def countWordOccurrences(words: List[str]) -> Dict[str, int]:
     for word in words:
         if word in wordCount:
             wordCount[word] += 1
-            print(wordCount[word])
         else:
             wordCount[word] = 1
     
@@ -14,9 +13,7 @@ def countWordOccurrences(words: List[str]) -> Dict[str, int]:
 
 def main():
     words = input("Enter a sequence of words: ").split()
-    
     result = countWordOccurrences(words)
-    
     print(result)
 
 main()
