@@ -1,15 +1,15 @@
 from typing import List, Dict
 
 def countWordOccurrences(words: List[str]) -> Dict[str, int]:
-    word_count = {}
+    wordCount = {}
     
     for word in words:
-        if word in word_count:
-            word_count[word] += 1
+        if word in wordCount:
+            wordCount[word] += 1
         else:
-            word_count[word] = 1
+            wordCount[word] = 1
     
-    return word_count
+    return wordCount
 
 def main():
     words = input("Enter a sequence of words: ").split()
