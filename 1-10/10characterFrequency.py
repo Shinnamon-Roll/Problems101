@@ -1,25 +1,23 @@
-def characterFrequency(strings: str): 
-    empList = []
+def characterFrequency(*args: str) -> dict:
+    combined_string = ''.join(args)
+
+    frequencyDict = {}
+
+    for char in combined_string:
+        if char in frequencyDict:
+            frequencyDict[char] += 1
+        else:
+            frequencyDict[char] = 1
     
-    for chars in strings:
-        for char in chars:
-            charCount = 0
-            if not char in empList:
-                empList.append(char)
-                charCount += 1
-                print(charCount)
-            if charCount == empList:
-                charCount += 1
-                print(charCount)
-
-
-    print(empList)
-
+    return frequencyDict
 
 def main():
-    strings = list(map(str, input("Enter multiple values: ").split()))
-    characterFrequency(strings)
+    strings = []
+    for i in range(5):
+        strings.append(input(f"Enter string {i+1}: "))
+    
+    result = characterFrequency(*strings)
+    
+    print(result)
 
 main()
-
-# hello world test case example
