@@ -2,6 +2,8 @@ def isWordInList(word_list: list[str], search_term: str) -> bool:
     for word in word_list:
         if word == search_term:
             return True
+        else:
+            return False
 
 def main():
     word_list = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon"]
