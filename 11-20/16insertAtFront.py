@@ -1,6 +1,6 @@
 def insertAtFront(words: list[str]) -> list[str]:
     for word in words:
-        
+        print(word)
 
 
     print(words)
