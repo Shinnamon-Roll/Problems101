@@ -1,13 +1,16 @@
 def insertAtFront(words: list[str]) -> list[str]:
-    for word in words:
-        print(word)
-
-
-    print(words)
+    wordList.insert(0, words)
+    return wordList
 
 def main():
-    strings = input("Enter your words : ").split()
-    results = insertAtFront(strings)
-    print(results)
+    while True:
+        word = input("Enter word o insert : ")
+        results = insertAtFront(word)
+        print(results)
 
+        check = input("Again? (yes or no) : ")
+        if check == "no":
+            break
+        
+wordList = []
 main()
