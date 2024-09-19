@@ -8,6 +8,6 @@ def main():
               [5,6,7,8],
               [9,10,11,12]]
 
-    results = transposeMatrix(matrix1)
-    print(results)
+    # results = transposeMatrix(matrix1)
+    # print(results)
 main()
