@@ -1,5 +1,5 @@
 def calculateAnnualReturn(initialInvestment: float, finalInvestment: float, years: int) -> float:
-    print(f"Resulte is : {((finalInvestment / initialInvestment) ** (1 / years)) - 1:.2f}")
+    print(f"Resulte is : {(((finalInvestment / initialInvestment) ** (1 / years)) - 1) * 100:.2f}")
 
 def main():
     initialInversment = int(input("Enter a initial inversment : "))
