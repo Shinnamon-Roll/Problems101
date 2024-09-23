@@ -12,7 +12,9 @@ def groupByUnitDigit(numbers: list[int]) -> list[list[int]]:
     return result
     
 def main():
-    numbers = [21, 34, 51, 23, 37, 44, 60, 11, 91, 99]
+    numbers = []
+    for i in range(50000000):
+        numbers.append(i)
 
     result = groupByUnitDigit(numbers)
     print(result)
