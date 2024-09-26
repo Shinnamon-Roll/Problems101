@@ -23,7 +23,7 @@ def main():
         bills.append(money)
 
     result, discount = calculateTotalPayment(numBills, bills)
-    print(f"Your total amount is {result} and your discount is {discount}")
+    print(f"Your total amount is {result} and your discount is {discount * 100:.0f}%")
         
 
 main()
